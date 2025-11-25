@@ -17,7 +17,10 @@
   <body>
     <div class="main_container">
       <!-- ================= NAVBAR ================= -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 position-fixed top-0 w-100"
+        style="z-index: 100"
+      >
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="../Assets/logo.png" class="logo" alt="Encodal Logo" />
@@ -80,38 +83,491 @@
       </nav>
 
       <!-- ================= HERO SECTION ================= -->
-      <section class="hero_section py-5 bg-light">
+      <section class="hero_section_wrapper">
+        <div id="particles-js"></div>
+
+        <section class="hero_section py-5">
+          <div class="container">
+            <div class="row align-items-center">
+              <!-- Left Content -->
+              <div class="col-md-6 hero_content">
+                <h1 class="hero_title fw-bold">
+                  We Build Digital Solutions for Modern Businesses
+                </h1>
+
+                <p class="hero_text mt-3">
+                  Encodal delivers world-class digital services including web
+                  development, app development, UI/UX design and enterprise
+                  software solutions. We help brands grow with technology-driven
+                  innovation.
+                </p>
+
+                <button class="btn btn-primary btn-lg mt-3">Get Started</button>
+              </div>
+
+              <!-- Right Image -->
+              <div
+                class="col-md-6 text-center mt-4 mt-md-0 hero_image_container"
+              >
+                <img
+                  src="../Assets/banner_image.avif"
+                  class="hero_image"
+                  alt="Encodal Banner"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- ================= SERVICES SECTION ================= -->
+      <!-- Services Overview Section -->
+      <section class="services_section py-5 bg-light">
         <div class="container">
-          <div class="row align-items-center">
-            <!-- Left Content -->
-            <div class="col-md-6 hero_content">
-              <h1 class="hero_title fw-bold">
-                We Build Digital Solutions for Modern Businesses
-              </h1>
+          <div class="text-center mb-5">
+            <h2 class="fw-bold">Our Core Services</h2>
+            <p class="text-muted">
+              We deliver high-quality digital solutions to help businesses grow,
+              scale, and innovate.
+            </p>
+          </div>
 
-              <p class="hero_text mt-3">
-                Encodal delivers world-class digital services including web
-                development, app development, UI/UX design and enterprise
-                software solutions. We help brands grow with technology-driven
-                innovation.
-              </p>
-
-              <button class="btn btn-primary btn-lg mt-3">Get Started</button>
+          <div class="row g-4">
+            <!-- Service 1 -->
+            <div class="col-md-4">
+              <div
+                class="service_card p-4 shadow-lg bg-white h-100 text-center"
+              >
+                <img src="../Assets/web_development.png" width="60" alt="" />
+                <h4 class="mt-3">Web Development</h4>
+                <p class="text-muted">
+                  Custom, responsive, and high-performance websites built with
+                  modern technologies.
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-sm mt-2"
+                  >Learn More</a
+                >
+              </div>
             </div>
 
-            <!-- Right Image -->
-            <div class="col-md-6 text-center mt-4 mt-md-0 hero_image_container">
-              <img
-                src="../Assets/banner_image.avif"
-                class="hero_image"
-                alt="Encodal Banner"
-              />
+            <!-- Service 2 -->
+            <div class="col-md-4">
+              <div
+                class="service_card p-4 shadow-lg bg-white h-100 text-center"
+              >
+                <img src="../Assets/App-development.png" width="60" alt="" />
+                <h4 class="mt-3">Mobile App Development</h4>
+                <p class="text-muted">
+                  Native & cross-platform mobile apps with seamless performance
+                  and user experience.
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-sm mt-2"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="col-md-4">
+              <div
+                class="service_card p-4 shadow-lg bg-white h-100 text-center"
+              >
+                <img src="../Assets/ui.png" width="60" alt="" />
+                <h4 class="mt-3">UI / UX Design</h4>
+                <p class="text-muted">
+                  Modern, user-friendly interface designs that deliver smooth
+                  digital experiences.
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-sm mt-2"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="col-md-4">
+              <div
+                class="service_card p-4 shadow-lg bg-white h-100 text-center"
+              >
+                <img src="../Assets/Commerce.png" width="60" alt="" />
+                <h4 class="mt-3">E-Commerce Solutions</h4>
+                <p class="text-muted">
+                  Scalable online stores with secure payment integration and
+                  custom features.
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-sm mt-2"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="col-md-4">
+              <div
+                class="service_card p-4 shadow-lg bg-white h-100 text-center"
+              >
+                <img src="../Assets/Custom_Software.png" width="60" alt="" />
+                <h4 class="mt-3">Custom Software</h4>
+                <p class="text-muted">
+                  Tailored software solutions built to streamline operations and
+                  enhance productivity.
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-sm mt-2"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="col-md-4">
+              <div
+                class="service_card p-4 shadow-lg bg-white h-100 text-center"
+              >
+                <img src="../Assets/Digital_Marketing.png" width="60" alt="" />
+                <h4 class="mt-3">Digital Marketing</h4>
+                <p class="text-muted">
+                  SEO, social media, and complete digital marketing strategies
+                  to boost your brand.
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-sm mt-2"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Auto-Scrolling Logo Slider -->
+        </div>
+        <div class="square_logo_slider_container py-4 mt-4 shadow-sm rounded-3">
+          <div class="square_logo_slider">
+            <!-- Logo Cards -->
+            <div class="logo_card">
+              <img src="../Assets/web_development.png" alt="Logo" />
+            </div>
+            <div class="logo_card">
+              <img src="../Assets/App-development.png" alt="Logo" />
+            </div>
+            <div class="logo_card">
+              <img src="../Assets/ui.png" alt="Logo" />
+            </div>
+            <div class="logo_card">
+              <img src="../Assets/Commerce.png" alt="Logo" />
+            </div>
+            <div class="logo_card">
+              <img src="../Assets/Custom_Software.png" alt="Logo" />
+            </div>
+            <div class="logo_card">
+              <img src="../Assets/Digital_Marketing.png" alt="Logo" />
+            </div>
+
+            <!-- DUPLICATE for infinite loop -->
+            <div class="logo_card">
+              <img src="../Assets/web_development.png" alt="Logo" />
+            </div>
+            <div class="logo_card">
+              <img src="../Assets/App-development.png" alt="Logo" />
+            </div>
+            <div class="logo_card">
+              <img src="../Assets/ui.png" alt="Logo" />
+            </div>
+            <div class="logo_card">
+              <img src="../Assets/Commerce.png" alt="Logo" />
+            </div>
+            <div class="logo_card">
+              <img src="../Assets/Custom_Software.png" alt="Logo" />
+            </div>
+            <div class="logo_card">
+              <img src="../Assets/Digital_Marketing.png" alt="Logo" />
             </div>
           </div>
         </div>
       </section>
+      <!-- ================= PORTFOLIO SECTION ================= -->
+      <!-- Portfolio Section -->
+      <div class="profile text-center mt-3">
+        <h2 class="fw-bold">Our Portfolio</h2>
+        <p class="text-muted">
+          We deliver high-quality digital solutions to help businesses grow,
+          scale, and innovate.
+        </p>
+      </div>
+      <div
+        id="portfolioCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#portfolioCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#portfolioCarousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#portfolioCarousel"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+
+        <div class="carousel-inner pb-4">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-4">
+                <div class="card portfolio-card">
+                  <img src="../Assets/banner_image.avif" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Corrupti perferendis repellat facilis ullam aperiam,
+                      voluptates nobis? Unde vitae voluptatum quibusdam?Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit. Illo
+                      aliquam at non quam voluptates, ipsa nostrum ipsum minima
+                      fugiat dignissimos?
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card portfolio-card">
+                  <img src="../Assets/banner_image.avif" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Corrupti perferendis repellat facilis ullam aperiam,
+                      voluptates nobis? Unde vitae voluptatum quibusdam?Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit. Illo
+                      aliquam at non quam voluptates, ipsa nostrum ipsum minima
+                      fugiat dignissimos?
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card portfolio-card">
+                  <img src="../Assets/banner_image.avif" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Corrupti perferendis repellat facilis ullam aperiam,
+                      voluptates nobis? Unde vitae voluptatum quibusdam?Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit. Illo
+                      aliquam at non quam voluptates, ipsa nostrum ipsum minima
+                      fugiat dignissimos?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-4">
+                <div class="card portfolio-card">
+                  <img src="../Assets/banner_image.avif" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Corrupti perferendis repellat facilis ullam aperiam,
+                      voluptates nobis? Unde vitae voluptatum quibusdam?Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit. Illo
+                      aliquam at non quam voluptates, ipsa nostrum ipsum minima
+                      fugiat dignissimos?
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card portfolio-card">
+                  <img src="../Assets/banner_image.avif" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Corrupti perferendis repellat facilis ullam aperiam,
+                      voluptates nobis? Unde vitae voluptatum quibusdam?Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit. Illo
+                      aliquam at non quam voluptates, ipsa nostrum ipsum minima
+                      fugiat dignissimos?
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card portfolio-card">
+                  <img src="../Assets/banner_image.avif" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Corrupti perferendis repellat facilis ullam aperiam,
+                      voluptates nobis? Unde vitae voluptatum quibusdam?Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit. Illo
+                      aliquam at non quam voluptates, ipsa nostrum ipsum minima
+                      fugiat dignissimos?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#portfolioCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#portfolioCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <!-- ================= CONTACT SECTION ================= -->
+      <section class="contact-cta py-5 text-center bg-light">
+        <div class="container">
+          <h2 class="fw-bold">Ready to Start Your Project?</h2>
+          <p class="mt-2">
+            Let’s build something amazing together. Contact our team today!
+          </p>
+          <a href="#contact" class="btn btn-primary btn-lg mt-3">Contact Us</a>
+        </div>
+      </section>
+      <!-- ================= CONTACT SECTION ================= -->
+      <!-- Footer -->
+      <footer class="footer bg-dark text-white pt-5 pb-4">
+        <div class="container">
+          <div class="row">
+            <!-- Company Info -->
+            <div class="Company-info col-md-4 mb-4">
+              <h5 class="fw-bold mb-3">Encodal Technologies</h5>
+              <p>
+                We build digital solutions including web development, app
+                development, UI/UX design & enterprise software. Your trusted
+                partner for innovation.
+              </p>
+
+              <div class="social-icons mt-3">
+                <a href="#" class="text-white me-3 fs-5"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+                <a href="#" class="text-white me-3 fs-5"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="text-white me-3 fs-5"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="#" class="text-white fs-5"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="quick-link col-md-2 mb-4">
+              <h6 class="fw-bold mb-3">Quick Links</h6>
+              <ul class="list-unstyled footer-links">
+                <li>
+                  <a href="#" class="text-white text-decoration-none">Home</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none">About</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Services -->
+            <div class="Company-info-services col-md-3 mb-4">
+              <h6 class="fw-bold mb-3">Our Services</h6>
+              <ul class="list-unstyled footer-links">
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Web Development</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >App Development</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >UI/UX Design</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >E-Commerce Solutions</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Digital Marketing</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-md-3 mb-4">
+              <h6 class="fw-bold mb-3">Contact Us</h6>
+              <p class="mb-2">
+                <i class="fas fa-map-marker-alt me-2"></i> Lahore, Pakistan
+              </p>
+              <p class="mb-2">
+                <i class="fas fa-envelope me-2"></i> info@encodal.com
+              </p>
+              <p class="mb-2">
+                <i class="fas fa-phone me-2"></i> +92 300 1234567
+              </p>
+            </div>
+          </div>
+
+          <hr class="border-light" />
+
+          <div class="text-center">
+            <small>© 2025 Encodal Technologies. All Rights Reserved.</small>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./Home.js"></script>
   </body>
 </html>

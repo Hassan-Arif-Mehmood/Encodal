@@ -8,7 +8,6 @@
 .navbar .nav-link:hover {
   color: #0d6efd !important;
 }
-
 .logo {
   width: 140px;
   height: 40px;
@@ -22,9 +21,6 @@
   border-radius: 8px;
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
 }
-
-/* Customers card */
-/* shadow */
 
 /* controls */
 .carousel-control-prev {

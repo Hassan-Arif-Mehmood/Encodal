@@ -1,4 +1,3 @@
-
 /* ===== NAVBAR ===== */
 .navbar .nav-link {
   color: #333 !important;
@@ -15,41 +14,31 @@
   height: 40px;
 }
 
-/* About us background */
-/* .aboutbackground{
-  background: url(/Assets/aboutbanner.png);
-  background-size: cover;
-  height: 600px;
-  background-position: center;
-  
-} */
-
 /* team card */
-.team-card:hover{
- cursor: pointer; 
+.team-card:hover {
+  cursor: pointer;
   transform: translateY(-8px);
   transition: transform 0.3s ease;
- border-radius: 8px;
+  border-radius: 8px;
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
 }
 
- 
 /* Customers card */
 /* shadow */
 
 /* controls */
-.carousel-control-prev{
-  filter: invert(0.3); 
+.carousel-control-prev {
+  filter: invert(0.3);
   transition: filter 0.3s ease;
 }
-.carousel-control-prev:hover{
+.carousel-control-prev:hover {
   filter: invert(1);
 }
-.carousel-control-next{
-  filter: invert(0.3); 
+.carousel-control-next {
+  filter: invert(0.3);
   transition: filter 0.3s ease;
 }
-.carousel-control-next:hover{
+.carousel-control-next:hover {
   filter: invert(1);
 }
 

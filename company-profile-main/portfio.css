@@ -55,26 +55,123 @@ body {
 .card-icon {
   font-size: 2.5rem;
 }
+/* ===== SERVICES SECTION ===== */
+.service_card {
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
 
-/* PROJECT CARDS */
-.project-flat {
-  border: none;
-  border-radius: 8px;
+.service_card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.container .text-center h2,
+.service_card h4, .profile h2 ,.contact-cta h2 {
+  color: #0d3b66;
+}
+/* Auto-Scrolling Logo Slider */
+
+/* Container */
+.square_logo_slider_container {
   overflow: hidden;
-  background-color: #ffffff;
-  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  background: white;
+  padding: 20px 0;
+  margin: 0 10px;
 }
 
-.project-flat:hover {
+/* Slider Row */
+.square_logo_slider {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  animation: scroll 25s linear infinite;
+}
+
+/* Card Style */
+.logo_card {
+  width: 110px;
+  height: 110px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+.logo_card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
 
-.project-flat .card-img-top {
+/* Logo Image */
+.logo_card img {
+  width: 60px;
+  height: auto;
+  opacity: 0.9;
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Portfolio Card */
+.portfolio_card {
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio_card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+.portfolio_card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio_card:hover img {
+  transform: scale(1.05);
+}
+
+/* Center indicators */
+.carousel-indicators button {
+  background-color: #444;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.portfolio-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.portfolio-card img {
+  height: 220px;
   object-fit: cover;
-  height: 200px;
 }
 
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
 /* Footer section */
 .footer-links a {
   display: block;

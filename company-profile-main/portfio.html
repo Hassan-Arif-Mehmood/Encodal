@@ -8,378 +8,622 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="portfio.css" />
   </head>
 
   <body>
-      <!-- ================= NAVBAR ================= -->
-      
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 position-fixed top-0 w-100"
-        style="z-index: 100"
-      >
-        <div class="container">
-          <a class="navbar-brand" href="../home/Home.html">
-            <img src="../Assets/logo.png" class="logo" alt="Encodal Logo" />
-          </a>
+    <!-- ================= NAVBAR ================= -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 position-fixed top-0 w-100"
+      style="z-index: 100"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="../home/Home.html">
+          <img src="../Assets/logo.png" class="logo" alt="Encodal Logo" />
+        </a>
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
-              <li class="nav-item">
-                <a class="nav-link active text-primary" href="../home/Home.html"
-                  >Home</a
-                >
-              </li>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link" href="../home/Home.html">Home</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="../about/About.html"
-                  >About</a
-                >
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about/About.html">About</a>
+            </li>
 
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="../services/Services.html"
-                >
-                  Services
-                </a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../services/Services.html">
+                Services
+              </a>
+            </li>
 
-              <li class="nav-item">
-        
-                <a
-                  class="nav-link"
-                  href="../company-profile-main/portfio.html"
-                  >Portfolio</a
-                >
-                
-              </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active fw-semibold text-primary"
+                href="../company-profile-main/portfio.html"
+                >Portfolio</a
+              >
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="../blogs/Blog.html">Blog</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../blogs/Blog.html">Blog</a>
+            </li>
 
-              <li class="nav-item">
-                <a
-                  href="../Contact/contact.html"
-                  class="btn btn-primary px-4 ms-lg-3"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
+            <li class="nav-item">
+              <a
+                href="../Contact/contact.html"
+                class="btn btn-primary px-4 ms-lg-3"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+<section class="hero_section_wrapper py-5">
+  <section class="hero_section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 hero_content order-lg-1 order-2">
+          <h1 class="hero_title fw-bold mb-4">
+            Crafting Digital <span class="text-primary">Excellence</span> Through Innovative Solutions
+          </h1>
+          <p class="hero_text mb-4">
+            Discover our portfolio of transformative digital experiences that combine cutting-edge technology with exceptional design to drive business success.
+          </p>
+          <div class="d-flex gap-3 flex-wrap mb-5">
+            <a href="#portfolio" class="btn btn-primary btn-lg px-4">
+              <i class="fas fa-eye me-2"></i>Browse Projects
+            </a>
+            <a href="#contact" class="btn btn-outline-primary btn-lg px-4">
+              <i class="fas fa-paper-plane me-2"></i>Start Project
+            </a>
+          </div>
+          
+          <div class="row">
+            <div class="col-4">
+              <div class="feature-item text-center">
+                <div class="feature-icon bg-primary text-white rounded-circle p-3 d-inline-flex mb-3">
+                  <i class="fas fa-bolt fa-lg"></i>
+                </div>
+                <h6 class="fw-bold">Fast Delivery</h6>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="feature-item text-center">
+                <div class="feature-icon bg-success text-white rounded-circle p-3 d-inline-flex mb-3">
+                  <i class="fas fa-shield-alt fa-lg"></i>
+                </div>
+                <h6 class="fw-bold">Quality Assured</h6>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="feature-item text-center">
+                <div class="feature-icon bg-warning text-white rounded-circle p-3 d-inline-flex mb-3">
+                  <i class="fas fa-headset fa-lg"></i>
+                </div>
+                <h6 class="fw-bold">24/7 Support</h6>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-    <header
-      class="hero text-center text-warning py-5"
-      style="background-color: rgb(227, 227, 225)"
-    >
-      <div class="container py-5">
-        <img
-          src="https://media.istockphoto.com/id/2217741484/photo/online-sales-concept-of-digital-marketing-ad-product-ads-promotion-of-products-or-services.jpg?s=612x612&w=0&k=20&c=eng2-BqV44_C9hM8LOFqGmzdkfVfpOQpoqqcd0iltp4="
-          alt="Profile Photo"
-          class="profile-pic mb-3"
-        />
-        <h1 class="display-4" style="color: black">ENCODAL</h1>
-        <p class="lead" style="color: black">Web Developer & Designer</p>
+        
+        <div class="col-lg-6 order-lg-2 order-1 text-center mb-5 mb-lg-0 hero_image_container">
+          <div class="image-frame position-relative">
+            <img src="../Assets/banner_image.avif" class="hero_image" alt="Portfolio Banner" />
+            <div class="image-overlay"></div>
+          </div>
+          <div class="tech-stack mt-4">
+            <span class="badge bg-light text-dark me-2 mb-2 p-2">
+              <i class="fab fa-react text-primary me-1"></i> React
+            </span>
+            <span class="badge bg-light text-dark me-2 mb-2 p-2">
+              <i class="fab fa-node-js text-success me-1"></i> Node.js
+            </span>
+            <span class="badge bg-light text-dark me-2 mb-2 p-2">
+              <i class="fab fa-vuejs text-info me-1"></i> Vue.js
+            </span>
+            <span class="badge bg-light text-dark me-2 mb-2 p-2">
+              <i class="fab fa-python text-warning me-1"></i> Python
+            </span>
+          </div>
+        </div>
       </div>
-    </header>
+    </div>
+  </section>
+</section>
 
-    <!-- ================= SERVICES SECTION ================= -->
-    <!-- Services Overview Section -->
-    <section class="services_section py-5 bg-light">
+    <!-- ================= PORTFOLIO STATS ================= -->
+    <section id="stats" class="stats-section py-5 bg-light">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md-3 col-6">
+            <div class="stat-card p-4 rounded-4 bg-white shadow-sm">
+              <i class="fas fa-project-diagram fa-3x text-primary mb-3"></i>
+              <h2 class="fw-bold display-5">50+</h2>
+              <p class="text-muted">Projects Completed</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="stat-card p-4 rounded-4 bg-white shadow-sm">
+              <i class="fas fa-users fa-3x text-primary mb-3"></i>
+              <h2 class="fw-bold display-5">35+</h2>
+              <p class="text-muted">Happy Clients</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="stat-card p-4 rounded-4 bg-white shadow-sm">
+              <i class="fas fa-code-branch fa-3x text-primary mb-3"></i>
+              <h2 class="fw-bold display-5">120k+</h2>
+              <p class="text-muted">Lines of Code</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="stat-card p-4 rounded-4 bg-white shadow-sm">
+              <i class="fas fa-award fa-3x text-primary mb-3"></i>
+              <h2 class="fw-bold display-5">15+</h2>
+              <p class="text-muted">Awards Won</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PORTFOLIO GRID ================= -->
+    <section id="portfolio" class="portfolio_section py-5">
       <div class="container">
         <div class="text-center mb-5">
-          <h2 class="fw-bold">Our Core Services</h2>
+          <h2 class="fw-bold" style="color: #0d3b66">Featured Projects</h2>
           <p class="text-muted">
-            We deliver high-quality digital solutions to help businesses grow,
-            scale, and innovate.
+            Discover our innovative solutions that drive business growth and
+            digital transformation
           </p>
         </div>
 
         <div class="row g-4">
-          <!-- Service 1 -->
-          <div class="col-md-4">
-            <div class="service_card p-4 shadow-lg bg-white h-100 text-center">
-              <img src="../Assets/web_development.png" width="60" alt="" />
-              <h4 class="mt-3">Web Development</h4>
-              <p class="text-muted">
-                Custom, responsive, and high-performance websites built with
-                modern technologies.
-              </p>
-              <a href="#" class="btn btn-outline-primary btn-sm mt-2"
-                >Learn More</a
-              >
+          <!-- Project 1 -->
+          <div class="col-md-4" data-category="web">
+            <div class="portfolio_card shadow-lg bg-white h-100">
+              <div class="portfolio-image-container">
+                <img
+                  src="../Assets/banner_image.avif"
+                  class="card-img-top"
+                  alt="E-Commerce Platform"
+                />
+                <div class="portfolio-overlay">
+                  <a href="#" class="btn btn-light btn-sm rounded-circle me-2">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="btn btn-light btn-sm rounded-circle">
+                    <i class="fas fa-search-plus"></i>
+                  </a>
+                </div>
+                <span class="category-tag bg-primary">Web Development</span>
+              </div>
+              <div class="card-body p-4">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-3"
+                >
+                  <h5 class="card-title fw-bold mb-0" style="color: #0d3b66">
+                    E-Commerce Platform
+                  </h5>
+                  <span class="badge bg-success">Live</span>
+                </div>
+                <p class="card-text text-muted mb-3">
+                  Full-featured online marketplace with real-time inventory
+                  management and secure payment integration.
+                </p>
+                <div class="tech-stack mb-3">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                </div>
+
+              </div>
             </div>
           </div>
 
-          <!-- Service 2 -->
-          <div class="col-md-4">
-            <div class="service_card p-4 shadow-lg bg-white h-100 text-center">
-              <img src="../Assets/App-development.png" width="60" alt="" />
-              <h4 class="mt-3">Mobile App Development</h4>
-              <p class="text-muted">
-                Native & cross-platform mobile apps with seamless performance
-                and user experience.
-              </p>
-              <a href="#" class="btn btn-outline-primary btn-sm mt-2"
-                >Learn More</a
-              >
+          <!-- Project 2 -->
+          <div class="col-md-4" data-category="app">
+            <div class="portfolio_card shadow-lg bg-white h-100">
+              <div class="portfolio-image-container">
+                <img
+                  src="../Assets/banner_image.avif"
+                  class="card-img-top"
+                  alt="Fitness Tracker App"
+                />
+                <div class="portfolio-overlay">
+                  <a href="#" class="btn btn-light btn-sm rounded-circle me-2">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="btn btn-light btn-sm rounded-circle">
+                    <i class="fas fa-search-plus"></i>
+                  </a>
+                </div>
+                <span class="category-tag bg-warning text-dark"
+                  >Mobile App</span
+                >
+              </div>
+              <div class="card-body p-4">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-3"
+                >
+                  <h5 class="card-title fw-bold mb-0" style="color: #0d3b66">
+                    Fitness Tracker App
+                  </h5>
+                  <span class="badge bg-info">In Progress</span>
+                </div>
+                <p class="card-text text-muted mb-3">
+                  Cross-platform fitness application with workout tracking,
+                  nutrition planning, and AI recommendations.
+                </p>
+                <div class="tech-stack mb-3">
+                  <span class="tech-tag">Flutter</span>
+                  <span class="tech-tag">Firebase</span>
+                  <span class="tech-tag">AI/ML</span>
+                </div>
+ 
+              </div>
             </div>
           </div>
 
-          <!-- Service 3 -->
-          <div class="col-md-4">
-            <div class="service_card p-4 shadow-lg bg-white h-100 text-center">
-              <img src="../Assets/ui.png" width="60" alt="" />
-              <h4 class="mt-3">UI / UX Design</h4>
-              <p class="text-muted">
-                Modern, user-friendly interface designs that deliver smooth
-                digital experiences.
-              </p>
-              <a href="#" class="btn btn-outline-primary btn-sm mt-2"
-                >Learn More</a
-              >
+          <!-- Project 3 -->
+          <div class="col-md-4" data-category="design">
+            <div class="portfolio_card shadow-lg bg-white h-100">
+              <div class="portfolio-image-container">
+                <img
+                  src="../Assets/banner_image.avif"
+                  class="card-img-top"
+                  alt="Banking Dashboard"
+                />
+                <div class="portfolio-overlay">
+                  <a href="#" class="btn btn-light btn-sm rounded-circle me-2">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="btn btn-light btn-sm rounded-circle">
+                    <i class="fas fa-search-plus"></i>
+                  </a>
+                </div>
+                <span class="category-tag bg-success">UI/UX Design</span>
+              </div>
+              <div class="card-body p-4">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-3"
+                >
+                  <h5 class="card-title fw-bold mb-0" style="color: #0d3b66">
+                    Banking Dashboard
+                  </h5>
+                  <span class="badge bg-success">Live</span>
+                </div>
+                <p class="card-text text-muted mb-3">
+                  Modern banking interface with data visualization, transaction
+                  analytics, and financial insights.
+                </p>
+                <div class="tech-stack mb-3">
+                  <span class="tech-tag">Figma</span>
+                  <span class="tech-tag">Adobe XD</span>
+                  <span class="tech-tag">Chart.js</span>
+                </div>
+
+              </div>
             </div>
           </div>
 
-          <!-- Service 4 -->
-          <div class="col-md-4">
-            <div class="service_card p-4 shadow-lg bg-white h-100 text-center">
-              <img src="../Assets/Commerce.png" width="60" alt="" />
-              <h4 class="mt-3">E-Commerce Solutions</h4>
-              <p class="text-muted">
-                Scalable online stores with secure payment integration and
-                custom features.
-              </p>
-              <a href="#" class="btn btn-outline-primary btn-sm mt-2"
-                >Learn More</a
-              >
+          <!-- Project 4 -->
+          <div class="col-md-4" data-category="ecommerce">
+            <div class="portfolio_card shadow-lg bg-white h-100">
+              <div class="portfolio-image-container">
+                <img
+                  src="../Assets/banner_image.avif"
+                  class="card-img-top"
+                  alt="Shopify Store"
+                />
+                <div class="portfolio-overlay">
+                  <a href="#" class="btn btn-light btn-sm rounded-circle me-2">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="btn btn-light btn-sm rounded-circle">
+                    <i class="fas fa-search-plus"></i>
+                  </a>
+                </div>
+                <span class="category-tag bg-info">E-Commerce</span>
+              </div>
+              <div class="card-body p-4">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-3"
+                >
+                  <h5 class="card-title fw-bold mb-0" style="color: #0d3b66">
+                    Custom Shopify Store
+                  </h5>
+                  <span class="badge bg-success">Live</span>
+                </div>
+                <p class="card-text text-muted mb-3">
+                  Customized Shopify store with advanced product filtering,
+                  quick checkout, and inventory management.
+                </p>
+                <div class="tech-stack mb-3">
+                  <span class="tech-tag">Shopify</span>
+                  <span class="tech-tag">Liquid</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+
+              </div>
             </div>
           </div>
 
-          <!-- Service 5 -->
-          <div class="col-md-4">
-            <div class="service_card p-4 shadow-lg bg-white h-100 text-center">
-              <img src="../Assets/Custom_Software.png" width="60" alt="" />
-              <h4 class="mt-3">Custom Software</h4>
-              <p class="text-muted">
-                Tailored software solutions built to streamline operations and
-                enhance productivity.
-              </p>
-              <a href="#" class="btn btn-outline-primary btn-sm mt-2"
-                >Learn More</a
-              >
+          <!-- Project 5 -->
+          <div class="col-md-4" data-category="web">
+            <div class="portfolio_card shadow-lg bg-white h-100">
+              <div class="portfolio-image-container">
+                <img
+                  src="../Assets/banner_image.avif"
+                  class="card-img-top"
+                  alt="Corporate Website"
+                />
+                <div class="portfolio-overlay">
+                  <a href="#" class="btn btn-light btn-sm rounded-circle me-2">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="btn btn-light btn-sm rounded-circle">
+                    <i class="fas fa-search-plus"></i>
+                  </a>
+                </div>
+                <span class="category-tag bg-primary">Web Development</span>
+              </div>
+              <div class="card-body p-4">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-3"
+                >
+                  <h5 class="card-title fw-bold mb-0" style="color: #0d3b66">
+                    Corporate Website
+                  </h5>
+                  <span class="badge bg-success">Live</span>
+                </div>
+                <p class="card-text text-muted mb-3">
+                  Professional corporate website with CMS integration, team
+                  management, and client portal features.
+                </p>
+                <div class="tech-stack mb-3">
+                  <span class="tech-tag">WordPress</span>
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">MySQL</span>
+                </div>
+
+              </div>
             </div>
           </div>
 
-          <!-- Service 6 -->
-          <div class="col-md-4">
-            <div class="service_card p-4 shadow-lg bg-white h-100 text-center">
-              <img src="../Assets/Digital_Marketing.png" width="60" alt="" />
-              <h4 class="mt-3">Digital Marketing</h4>
-              <p class="text-muted">
-                SEO, social media, and complete digital marketing strategies to
-                boost your brand.
-              </p>
-              <a href="#" class="btn btn-outline-primary btn-sm mt-2"
-                >Learn More</a
-              >
+          <!-- Project 6 -->
+          <div class="col-md-4" data-category="app">
+            <div class="portfolio_card shadow-lg bg-white h-100">
+              <div class="portfolio-image-container">
+                <img
+                  src="../Assets/banner_image.avif"
+                  class="card-img-top"
+                  alt="Food Delivery App"
+                />
+                <div class="portfolio-overlay">
+                  <a href="#" class="btn btn-light btn-sm rounded-circle me-2">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="btn btn-light btn-sm rounded-circle">
+                    <i class="fas fa-search-plus"></i>
+                  </a>
+                </div>
+                <span class="category-tag bg-warning text-dark"
+                  >Mobile App</span
+                >
+              </div>
+              <div class="card-body p-4">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-3"
+                >
+                  <h5 class="card-title fw-bold mb-0" style="color: #0d3b66">
+                    Food Delivery App
+                  </h5>
+                  <span class="badge bg-success">Live</span>
+                </div>
+                <p class="card-text text-muted mb-3">
+                  Food delivery application with real-time tracking, multiple
+                  payment options, and restaurant management.
+                </p>
+                <div class="tech-stack mb-3">
+                  <span class="tech-tag">React Native</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
+    </section>
 
-        <!-- Auto-Scrolling Logo Slider -->
+    <!-- ================= CLIENT TESTIMONIALS ================= -->
+    <section class="testimonials-section py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold" style="color: #0d3b66">Client Testimonials</h2>
+          <p class="text-muted">What our clients say about working with us</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div
+              class="testimonial-card p-4 bg-white rounded-4 shadow-sm h-100"
+            >
+              <div class="d-flex align-items-center mb-4">
+                <div
+                  class="avatar bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                  style="width: 50px; height: 50px"
+                >
+                  <i class="fas fa-user fa-lg"></i>
+                </div>
+                <div class="ms-3">
+                  <h6 class="mb-0 fw-bold">John Smith</h6>
+                  <small class="text-muted">CEO, TechCorp</small>
+                </div>
+              </div>
+              <p class="mb-4">
+                "Encodal delivered beyond expectations. The e-commerce platform
+                increased our sales by 40% in just 3 months."
+              </p>
+              <div class="stars text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="testimonial-card p-4 bg-white rounded-4 shadow-sm h-100"
+            >
+              <div class="d-flex align-items-center mb-4">
+                <div
+                  class="avatar bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                  style="width: 50px; height: 50px"
+                >
+                  <i class="fas fa-user fa-lg"></i>
+                </div>
+                <div class="ms-3">
+                  <h6 class="mb-0 fw-bold">Sarah Johnson</h6>
+                  <small class="text-muted">Product Manager, HealthPlus</small>
+                </div>
+              </div>
+              <p class="mb-4">
+                "The fitness app has revolutionized how our users track their
+                health. The AI recommendations are spot on!"
+              </p>
+              <div class="stars text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="testimonial-card p-4 bg-white rounded-4 shadow-sm h-100"
+            >
+              <div class="d-flex align-items-center mb-4">
+                <div
+                  class="avatar bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                  style="width: 50px; height: 50px"
+                >
+                  <i class="fas fa-user fa-lg"></i>
+                </div>
+                <div class="ms-3">
+                  <h6 class="mb-0 fw-bold">Michael Chen</h6>
+                  <small class="text-muted">CTO, FinancePro</small>
+                </div>
+              </div>
+              <p class="mb-4">
+                "The banking dashboard design improved our internal efficiency
+                by 60%. Exceptional attention to detail!"
+              </p>
+              <div class="stars text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- PROJECTS / PORTFOLIO CARDS -->
-    <!-- Portfolio Section -->
-    <div class="profile text-center mt-3">
-      <h2 class="fw-bold">PROJECTS</h2>
-      <p class="text-muted">
-        We deliver high-quality digital solutions to help businesses grow,
-        scale, and innovate.
-      </p>
-    </div>
-    <div id="portfolioCarousel" class="carousel slide px-5" data-bs-ride="carousel">
-      <!-- Indicators -->
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#portfolioCarousel"
-          data-bs-slide-to="0"
-          class="active mt-3"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#portfolioCarousel"
-          data-bs-slide-to="1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#portfolioCarousel"
-          data-bs-slide-to="2"
-        ></button>
-      </div>
-
-      <div class="carousel-inner pb-4">
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <div class="row g-4 justify-content-center">
-            <div class="col-md-4">
-              <div class="card portfolio-card">
-                <img
-                  src="https://media.istockphoto.com/id/2186780924/photo/software-developers-working-together-on-code-in-modern-office.webp?a=1&b=1&s=612x612&w=0&k=20&c=pWNVU-dgYZ0F7WtW2B13secPzTIYFvkz9tHs2obMnyk="
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Corrupti perferendis repellat facilis ullam aperiam,
-                    voluptates nobis? Unde vitae voluptatum quibusdam?Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Illo
-                    aliquam at non quam voluptates, ipsa nostrum ipsum minima
-                    fugiat dignissimos?
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card portfolio-card">
-                <img
-                  src="https://tse2.mm.bing.net/th/id/OIP.ltbGIhJmIzveve5tmtpoxgHaEc?pid=Api&P=0&h=220"
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Corrupti perferendis repellat facilis ullam aperiam,
-                    voluptates nobis? Unde vitae voluptatum quibusdam?Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Illo
-                    aliquam at non quam voluptates, ipsa nostrum ipsum minima
-                    fugiat dignissimos?
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card portfolio-card">
-                <img
-                  src="https://tse2.mm.bing.net/th/id/OIP.PtRwHX-XhuoMfTxlIVDjEwHaEK?pid=Api&P=0&h=220"
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Corrupti perferendis repellat facilis ullam aperiam,
-                    voluptates nobis? Unde vitae voluptatum quibusdam?Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Illo
-                    aliquam at non quam voluptates, ipsa nostrum ipsum minima
-                    fugiat dignissimos?
-                  </p>
-                </div>
-              </div>
+    <!-- ================= TECHNOLOGIES WE USE ================= -->
+    <section class="technologies-section py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold" style="color: #0d3b66">Technologies We Master</h2>
+          <p class="text-muted">
+            We work with cutting-edge technologies to build modern solutions
+          </p>
+        </div>
+        <div class="row g-4 text-center">
+          <div class="col-4 col-md-2">
+            <div class="tech-icon p-3 rounded-3 bg-light">
+              <i class="fab fa-react fa-3x text-primary mb-2"></i>
+              <span class="d-block fw-medium">React</span>
             </div>
           </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <div class="row g-4 justify-content-center">
-            <div class="col-md-4">
-              <div class="card portfolio-card">
-                <img
-                  src="https://tse4.mm.bing.net/th/id/OIP.p0E_ZH7HN6BLKWOIBi4l9gHaEK?pid=Api&P=0&h=220"
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Corrupti perferendis repellat facilis ullam aperiam,
-                    voluptates nobis? Unde vitae voluptatum quibusdam?Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Illo
-                    aliquam at non quam voluptates, ipsa nostrum ipsum minima
-                    fugiat dignissimos?
-                  </p>
-                </div>
-              </div>
+          <div class="col-4 col-md-2">
+            <div class="tech-icon p-3 rounded-3 bg-light">
+              <i class="fab fa-node-js fa-3x text-success mb-2"></i>
+              <span class="d-block fw-medium">Node.js</span>
             </div>
-
-            <div class="col-md-4">
-              <div class="card portfolio-card">
-                <img
-                  src="https://tse2.mm.bing.net/th/id/OIP.OWXkwT8mHpXKRhq8dtAVwAHaFZ?pid=Api&P=0&h=220"
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Corrupti perferendis repellat facilis ullam aperiam,
-                    voluptates nobis? Unde vitae voluptatum quibusdam?Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Illo
-                    aliquam at non quam voluptates, ipsa nostrum ipsum minima
-                    fugiat dignissimos?
-                  </p>
-                </div>
-              </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="tech-icon p-3 rounded-3 bg-light">
+              <i class="fab fa-vuejs fa-3x text-info mb-2"></i>
+              <span class="d-block fw-medium">Vue.js</span>
             </div>
-
-            <div class="col-md-4">
-              <div class="card portfolio-card">
-                <img
-                  src="https://tse1.mm.bing.net/th/id/OIP.lNJ0H85ZzlLC_eG7dLs51gHaE8?pid=Api&P=0&h=220"
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Corrupti perferendis repellat facilis ullam aperiam,
-                    voluptates nobis? Unde vitae voluptatum quibusdam?Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Illo
-                    aliquam at non quam voluptates, ipsa nostrum ipsum minima
-                    fugiat dignissimos?
-                  </p>
-                </div>
-              </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="tech-icon p-3 rounded-3 bg-light">
+              <i class="fab fa-python fa-3x text-warning mb-2"></i>
+              <span class="d-block fw-medium">Python</span>
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="tech-icon p-3 rounded-3 bg-light">
+              <i class="fab fa-android fa-3x text-success mb-2"></i>
+              <span class="d-block fw-medium">Android</span>
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="tech-icon p-3 rounded-3 bg-light">
+              <i class="fab fa-apple fa-3x text-dark mb-2"></i>
+              <span class="d-block fw-medium">iOS</span>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Controls -->
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#portfolioCarousel"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#portfolioCarousel"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
+    <!-- ================= CONTACT CTA ================= -->
+    <section class="contact-cta py-5 text-center bg-light">
+      <div class="container">
+        <h2 class="fw-bold" style="color: #0d3b66">
+          Ready to Start Your Project?
+        </h2>
+        <p class="mt-2">
+          Let's build something amazing together. Contact our team today!
+        </p>
+        <a href="../Contact/contact.html" class="btn btn-primary btn-lg mt-3"
+          >Contact Us</a
+        >
+      </div>
+    </section>
 
     <!-- ================ FOOTER SECTION ================ -->
-    <!-- Footer -->
     <footer class="footer bg-dark text-white pt-5 pb-4">
       <div class="container">
         <div class="row">
@@ -413,21 +657,39 @@
             <h6 class="fw-bold mb-3">Quick Links</h6>
             <ul class="list-unstyled footer-links">
               <li>
-                <a href="#" class="text-white text-decoration-none">Home</a>
+                <a
+                  href="../home/Home.html"
+                  class="text-white text-decoration-none"
+                  >Home</a
+                >
               </li>
               <li>
-                <a href="#" class="text-white text-decoration-none">About</a>
+                <a
+                  href="../about/About.html"
+                  class="text-white text-decoration-none"
+                  >About</a
+                >
               </li>
               <li>
-                <a href="#" class="text-white text-decoration-none">Services</a>
+                <a
+                  href="../services/Services.html"
+                  class="text-white text-decoration-none"
+                  >Services</a
+                >
               </li>
               <li>
-                <a href="#" class="text-white text-decoration-none"
+                <a
+                  href="../company-profile-main/portfio.html"
+                  class="text-white text-decoration-none"
                   >Portfolio</a
                 >
               </li>
               <li>
-                <a href="#" class="text-white text-decoration-none">Contact</a>
+                <a
+                  href="../Contact/contact.html"
+                  class="text-white text-decoration-none"
+                  >Contact</a
+                >
               </li>
             </ul>
           </div>
@@ -437,27 +699,37 @@
             <h6 class="fw-bold mb-3">Our Services</h6>
             <ul class="list-unstyled footer-links">
               <li>
-                <a href="#" class="text-white text-decoration-none"
+                <a
+                  href="../services/Services.html"
+                  class="text-white text-decoration-none"
                   >Web Development</a
                 >
               </li>
               <li>
-                <a href="#" class="text-white text-decoration-none"
+                <a
+                  href="../services/Services.html"
+                  class="text-white text-decoration-none"
                   >App Development</a
                 >
               </li>
               <li>
-                <a href="#" class="text-white text-decoration-none"
+                <a
+                  href="../services/Services.html"
+                  class="text-white text-decoration-none"
                   >UI/UX Design</a
                 >
               </li>
               <li>
-                <a href="#" class="text-white text-decoration-none"
+                <a
+                  href="../services/Services.html"
+                  class="text-white text-decoration-none"
                   >E-Commerce Solutions</a
                 >
               </li>
               <li>
-                <a href="#" class="text-white text-decoration-none"
+                <a
+                  href="../services/Services.html"
+                  class="text-white text-decoration-none"
                   >Digital Marketing</a
                 >
               </li>
@@ -488,6 +760,5 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

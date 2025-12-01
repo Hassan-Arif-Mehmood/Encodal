@@ -1,3 +1,7 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
 /* ===== NAVBAR ===== */
 .navbar .nav-link {
   color: #333 !important;

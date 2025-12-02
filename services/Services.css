@@ -1,6 +1,11 @@
 * {
   font-family: "Inter", sans-serif;
 }
+
+body {
+  padding-top: 76px;
+}
+
 /* ===== NAVBAR ===== */
 .navbar .nav-link {
   color: #333 !important;
@@ -12,11 +17,204 @@
   color: #0d6efd !important;
 }
 
+.navbar .nav-link.active {
+  color: #0d6efd !important;
+  position: relative;
+}
+
+.navbar .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0d6efd;
+  border-radius: 2px;
+}
+
 .logo {
   width: 140px;
   height: 40px;
 }
-/* Footer section */
+
+/* ===== HERO SECTION ===== */
+.hero_content,
+.hero_image_container {
+  padding-top: 60px;
+}
+
+.hero_section {
+  background: #f8f9fa;
+  padding: 80px 0;
+}
+
+.hero_title {
+  font-size: 40px;
+  line-height: 1.3;
+  color: #0d3b66;
+}
+
+.hero_text {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+/* ===== SERVICES SECTION ===== */
+.service-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+  border-color: rgba(13, 110, 253, 0.2);
+}
+
+.service-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1);
+}
+
+.service-card h5 {
+  font-size: 1.25rem;
+}
+
+.service-card ul li {
+  color: #555;
+}
+
+/* ===== PROCESS SECTION ===== */
+.process-card {
+  transition: all 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+  border-color: rgba(13, 110, 253, 0.2);
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* ===== WHY CHOOSE US ===== */
+.feature-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+  border-color: rgba(13, 110, 253, 0.2);
+}
+
+.feature-card:hover .feature-icon {
+  transform: scale(1.1);
+}
+
+.feature-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+/* ===== PRICING SECTION ===== */
+.pricing-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.pricing-card:hover:not(.position-relative) {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+}
+
+.pricing-card.position-relative:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(13, 110, 253, 0.2) !important;
+}
+
+.popular-badge {
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.price {
+  color: #0d3b66;
+}
+
+.pricing-card ul li {
+  color: #555;
+}
+
+/* ===== CONTACT CTA ===== */
+.contact-cta h2 {
+  color: #0d3b66;
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+  background-color: #0d6efd;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+  border: 2px solid #0d6efd;
+  color: #0d6efd;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn-sm {
+  padding: 6px 16px;
+  font-size: 0.875rem;
+}
+
+/* ===== FOOTER ===== */
 .footer-links a {
   display: block;
   margin-bottom: 8px;
@@ -27,342 +225,74 @@
 .footer-links a:hover {
   opacity: 1;
   padding-left: 5px;
+  color: #0d6efd !important;
 }
 
-/* Button Style */
-.btn-primary {
-  background-color: #0d6efd;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: 600;
-}
-
-/* ===== SERVICES SECTION ===== */
-/* ================= Global Styles ================= */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-  background-color: #f8f9fa;
-  overflow-x: hidden;
-}
-
-/* ================= Hero Section ================= */
-.hero-section {
-  background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
-  color: #0d3b66;
-  padding: 100px 0 60px;
-  position: relative;
-  text-align: center;
-  overflow: hidden;
-}
-
-.hero-section::before {
-  content: '';
-  position: absolute;
-  width: 450px;
-  height: 450px;
-  background: rgba(59, 130, 246, 0.05);
-  border-radius: 50%;
-  top: -150px;
-  right: -150px;
-  z-index: 1;
-  animation: float 8s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(20px) rotate(45deg); }
-}
-
-.hero-section h1 {
-  position: relative;
-  z-index: 2;
-  font-size: 3rem;
-  font-weight: 700;
-}
-
-.hero-section p {
-  position: relative;
-  z-index: 2;
-  font-size: 1.25rem;
-  color: #555;
-}
-
-/* ================= Services Cards ================= */
-.main-services-section .container h2{
-  color: #0d3b66;
-}
-.service-card {
-  background: white;
-  border-radius: 15px;
-  padding: 2rem;
-  height: 100%;
-  transition: all 0.35s ease;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  position: relative;
-  overflow: hidden;
-}
-
-.service-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: #0d3b66;
-  transform: scaleX(0);
-  transition: transform 0.35s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(59, 130, 246, 0.15);
-}
-
-.service-card:hover::before {
-  transform: scaleX(1);
-}
-
-.service-icon {
-  width: 90px;
-  height: 90px;
-  background: #e0f2fe;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5rem;
-  color: #3b82f6;
-  margin: 0 auto 1.5rem;
-  transition: all 0.35s ease;
-}
-
-.service-card:hover .service-icon {
-  transform: scale(1.2);
-  background: #3b82f6;
-  color: white;
-}
-
-.service-card h5 {
-  font-size: 1.4rem;
-  color: #0d3b66;
-  margin-bottom: 1rem;
-}
-
-.service-card p {
-  color: #6b7280;
-  line-height: 1.6;
-}
-
-/* ================= Process Section ================= */
-.process-section {
-  background: #ffffff;
-  padding: 80px 0;
-}
-.process-section .container h2{
-  color: #0d3b66;
-}
-.process-step {
-  position: relative;
-  padding: 2rem 1rem;
-  text-align: center;
+.social-icons a {
   transition: all 0.3s ease;
 }
 
-.process-step:hover {
-  transform: translateY(-5px);
-}
-
-.step-number {
-  width: 70px;
-  height: 70px;
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin: 0 auto 1.5rem;
-  box-shadow: 0 6px 15px rgba(59, 130, 246, 0.3);
-}
-
-.process-step h5 {
-  color: #0d3b66;
-  font-weight: 600;
-}
-
-.process-step p {
-  color: #6b7280;
-}
-
-.process-step::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(90deg, #3b82f6, #60a5fa);
-  top: 35px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-.process-step:last-child::after {
-  display: none;
-}
-
-/* ================= Feature / Why Choose Us ================= */
-h2{
-  color: #0d3b66;
-}
-.feature-box {
-  background: white;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  transition: all 0.35s ease;
-  border-left: 5px solid #0d3b66;
-}
-
-.feature-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(59, 130, 246, 0.15);
-}
-
-.feature-icon {
-  font-size: 3rem;
-  color: #0d3b66;
-  margin-bottom: 1rem;
-}
-
-.feature-box h5 {
-  color: #0d3b66;
-}
-
-/* ================= Pricing Section ================= */
-.pricing-section {
-  background: #f8f9fa;
-  padding: 80px 0;
-}
-
-.pricing-card {
-  background: white;
-  border-radius: 18px;
-  border: 1px solid #e5e7eb;
-  padding: 2.5rem;
-  height: 100%;
-  transition: all 0.35s ease;
-}
-
-.pricing-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 25px rgba(59, 130, 246, 0.15);
-  border-color: #3b82f6;
-}
-
-.pricing-card.featured {
-  background: #0d3b66;
-  color: white;
-  transform: scale(1.05);
-  border-color: #0d3b66;
-  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
-}
-
-.pricing-card.featured h4,
-.pricing-card.featured .price,
-.pricing-card.featured .pricing-features li {
-  color: white;
-}
-
-.price {
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 1.5rem 0;
-  color: #0d3b66;
-}
-
-.pricing-features {
-  list-style: none;
-  padding: 0;
-  margin: 2rem 0;
-}
-
-.pricing-features li {
-  padding: 0.75rem 0;
-  border-bottom: 1px solid #e5e7eb;
-  color: #6b7280;
-}
-
-.pricing-features i {
-  color: #3b82f6;
-}
-
-.btn-outline-dark {
-  border-color: #3b82f6;
-  color: #3b82f6;
-}
-
-.btn-outline-dark:hover {
-  background: #3b82f6;
-  color: white;
-  border-color: #3b82f6;
-}
-
-/* ================= CTA Section ================= */
-.cta-section {
-  background: #fff;
-  color: white;
-  padding: 80px 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.cta-btn {
-  background: white;
-  color: #1e3a8a;
-  padding: 14px 40px;
-  border-radius: 50px;
-  font-weight: 600;
-  border: 2px solid white;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.cta-btn:hover {
+.social-icons a:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
-  background: transparent;
-  color: white;
+  color: #0d6efd !important;
 }
 
-/* ================= Responsive Design ================= */
+/* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 992px) {
-  .hero-section h1 {
-    font-size: 2.5rem;
+  .hero_title {
+    font-size: 32px;
   }
-  .hero-section p {
-    font-size: 1.1rem;
-  }
-}
 
-@media (max-width: 768px) {
-  .process-step::after {
-    display: none;
+  .hero_text {
+    font-size: 15px;
   }
-  .service-card, .feature-box, .pricing-card {
+
+  .service-card,
+  .process-card,
+  .feature-card,
+  .pricing-card {
     margin-bottom: 30px;
   }
 }
 
-@media (max-width: 576px) {
-  .hero-section {
-    padding: 60px 0 40px;
+@media (max-width: 768px) {
+  .hero_section {
+    padding: 60px 0;
   }
-  .hero-section h1 {
-    font-size: 2rem;
+
+  .hero_title {
+    font-size: 28px;
+  }
+
+  .hero_text {
+    font-size: 14px;
+  }
+
+  .price {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero_title {
+    font-size: 24px;
+  }
+
+  .btn-primary,
+  .btn-outline-primary {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .service-icon,
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
   }
 }

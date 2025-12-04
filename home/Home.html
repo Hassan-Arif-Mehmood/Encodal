@@ -7,11 +7,18 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap">
-
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+    />
+       
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
     <link rel="stylesheet" href="./Home.css" />
-    <link rel="icon" href="../Assets/logo.png" />
+    <link rel="icon" href="../Assets/logo_icon.jpg" />
 
     <title>Encodal</title>
   </head>
@@ -26,7 +33,7 @@
       >
         <div class="container">
           <a class="navbar-brand" href="./Home.html">
-            <img src="../Assets/logo.png" class="logo" alt="Encodal Logo" />
+            <img src="../Assets/encodal_logo.jpg" class="logo" alt="Encodal Logo" />
           </a>
 
           <button
@@ -63,7 +70,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link fw-semibold"
-                  href="../company-profile-main/portfio.html"
+                  href="../portfolio/portfolio.html"
                   >Portfolio</a
                 >
               </li>
@@ -106,8 +113,12 @@
                   software solutions. We help brands grow with technology-driven
                   innovation.
                 </p>
-
-                <button class="btn btn-primary btn-lg mt-3">Get Started</button>
+                <a href="../Contact/contact.html">
+                  <button class="btn btn-primary btn-lg mt-3" href="../Contact/contact.html">
+                  Get Started
+                </button>
+                </a>
+                
               </div>
 
               <!-- Right Image -->
@@ -115,7 +126,7 @@
                 class="col-md-6 text-center mt-4 mt-md-0 hero_image_container"
               >
                 <img
-                  src="../Assets/banner_image.avif"
+                  src="../Assets/home_vector (2).PNG"
                   class="hero_image"
                   alt="Encodal Banner"
                 />
@@ -126,327 +137,368 @@
       </section>
 
       <!-- ================= SERVICES SECTION ================= -->
-      <!-- Services Overview Section -->
-      <section class="services_section py-5 bg-light">
-        <div class="container">
-          <div class="text-center mb-5">
-            <h2 class="fw-bold">Our Core Services</h2>
-            <p class="text-muted">
-              We deliver high-quality digital solutions to help businesses grow,
-              scale, and innovate.
-            </p>
+<!-- Services Section -->
+<section class="services_section py-5 bg-light">
+  <div class="container">
+    <div class="services-header">
+      <h2>Our Core Services</h2>
+      <p>
+        We deliver high-quality digital solutions to help businesses grow,
+        scale, and innovate.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Service 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="modern-service-card card-1">
+          <div class="card-pattern">
+            <svg viewBox="0 0 200 200" xmlns="ht">
+              <path fill="currentColor" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,88.5,-0.9C87,14.6,81.4,29.2,73.1,42.3C64.8,55.4,53.8,67,40.4,73.8C27,80.6,11.2,82.6,-4.3,79.9C-19.8,77.2,-35.1,69.8,-48.3,60.1C-61.5,50.4,-72.6,38.4,-78.9,24.1C-85.2,9.8,-86.7,-6.8,-82.4,-21.6C-78.1,-36.4,-68,-49.4,-55.4,-57.2C-42.8,-65,-27.7,-67.6,-13.1,-69.8C1.5,-72,30.6,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
+            </svg>
+          </div>
+          
+          <div class="card-number">01</div>
+          
+          <div class="service-icon-wrapper">
+            <img src="../Assets/icons/website.png" alt="Web Development">
           </div>
 
-          <div class="row g-4">
-            <!-- Service 1 -->
-            <div class="col-md-4">
-              <div
-                class="service_card p-4 shadow-lg bg-white h-100 text-center"
-              >
-                <img src="../Assets/web_development.png" width="60" alt="" />
-                <h4 class="mt-3">Web Development</h4>
-                <p class="text-muted">
-                  Custom, responsive, and high-performance websites built with
-                  modern technologies.
-                </p>
-                <a href="#" class="btn btn-outline-primary btn-sm mt-2"
-                  >Learn More</a
-                >
-              </div>
-            </div>
-
-            <!-- Service 2 -->
-            <div class="col-md-4">
-              <div
-                class="service_card p-4 shadow-lg bg-white h-100 text-center"
-              >
-                <img src="../Assets/App-development.png" width="60" alt="" />
-                <h4 class="mt-3">Mobile App Development</h4>
-                <p class="text-muted">
-                  Native & cross-platform mobile apps with seamless performance
-                  and user experience.
-                </p>
-                <a href="#" class="btn btn-outline-primary btn-sm mt-2"
-                  >Learn More</a
-                >
-              </div>
-            </div>
-
-            <!-- Service 3 -->
-            <div class="col-md-4">
-              <div
-                class="service_card p-4 shadow-lg bg-white h-100 text-center"
-              >
-                <img src="../Assets/ui.png" width="60" alt="" />
-                <h4 class="mt-3">UI / UX Design</h4>
-                <p class="text-muted">
-                  Modern, user-friendly interface designs that deliver smooth
-                  digital experiences.
-                </p>
-                <a href="#" class="btn btn-outline-primary btn-sm mt-2"
-                  >Learn More</a
-                >
-              </div>
-            </div>
-
-            <!-- Service 4 -->
-            <div class="col-md-4">
-              <div
-                class="service_card p-4 shadow-lg bg-white h-100 text-center"
-              >
-                <img src="../Assets/Commerce.png" width="60" alt="" />
-                <h4 class="mt-3">E-Commerce Solutions</h4>
-                <p class="text-muted">
-                  Scalable online stores with secure payment integration and
-                  custom features.
-                </p>
-                <a href="#" class="btn btn-outline-primary btn-sm mt-2"
-                  >Learn More</a
-                >
-              </div>
-            </div>
-
-            <!-- Service 5 -->
-            <div class="col-md-4">
-              <div
-                class="service_card p-4 shadow-lg bg-white h-100 text-center"
-              >
-                <img src="../Assets/Custom_Software.png" width="60" alt="" />
-                <h4 class="mt-3">Custom Software</h4>
-                <p class="text-muted">
-                  Tailored software solutions built to streamline operations and
-                  enhance productivity.
-                </p>
-                <a href="#" class="btn btn-outline-primary btn-sm mt-2"
-                  >Learn More</a
-                >
-              </div>
-            </div>
-
-            <!-- Service 6 -->
-            <div class="col-md-4">
-              <div
-                class="service_card p-4 shadow-lg bg-white h-100 text-center"
-              >
-                <img src="../Assets/Digital_Marketing.png" width="60" alt="" />
-                <h4 class="mt-3">Digital Marketing</h4>
-                <p class="text-muted">
-                  SEO, social media, and complete digital marketing strategies
-                  to boost your brand.
-                </p>
-                <a href="#" class="btn btn-outline-primary btn-sm mt-2"
-                  >Learn More</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Auto-Scrolling Logo Slider -->
+          <h3 class="service-card-title">Web Development</h3>
+          
+          <p class="service-card-description">
+            Custom, responsive, and high-performance websites built with
+            modern technologies to elevate your digital presence.
+          </p>
         </div>
-        <div class="square_logo_slider_container py-4 mt-4 shadow-sm rounded-3">
-          <div class="square_logo_slider">
-            <!-- Logo Cards -->
-            <div class="logo_card">
-              <img src="../Assets/web_development.png" alt="Logo" />
-            </div>
-            <div class="logo_card">
-              <img src="../Assets/App-development.png" alt="Logo" />
-            </div>
-            <div class="logo_card">
-              <img src="../Assets/ui.png" alt="Logo" />
-            </div>
-            <div class="logo_card">
-              <img src="../Assets/Commerce.png" alt="Logo" />
-            </div>
-            <div class="logo_card">
-              <img src="../Assets/Custom_Software.png" alt="Logo" />
-            </div>
-            <div class="logo_card">
-              <img src="../Assets/Digital_Marketing.png" alt="Logo" />
-            </div>
-
-            <!-- DUPLICATE for infinite loop -->
-            <div class="logo_card">
-              <img src="../Assets/web_development.png" alt="Logo" />
-            </div>
-            <div class="logo_card">
-              <img src="../Assets/App-development.png" alt="Logo" />
-            </div>
-            <div class="logo_card">
-              <img src="../Assets/ui.png" alt="Logo" />
-            </div>
-            <div class="logo_card">
-              <img src="../Assets/Commerce.png" alt="Logo" />
-            </div>
-            <div class="logo_card">
-              <img src="../Assets/Custom_Software.png" alt="Logo" />
-            </div>
-            <div class="logo_card">
-              <img src="../Assets/Digital_Marketing.png" alt="Logo" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ================= PORTFOLIO SECTION ================= -->
-      <!-- Portfolio Section -->
-      <div class="profile text-center mt-3">
-        <h2 class="fw-bold">Our Portfolio</h2>
-        <p class="text-muted">
-          We deliver high-quality digital solutions to help businesses grow,
-          scale, and innovate.
-        </p>
       </div>
-      <div
-        id="portfolioCarousel"
-        class="carousel slide"
-        data-bs-ride="carousel"
+
+      <!-- Service 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="modern-service-card card-2">
+          <div class="card-pattern">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,88.5,-0.9C87,14.6,81.4,29.2,73.1,42.3C64.8,55.4,53.8,67,40.4,73.8C27,80.6,11.2,82.6,-4.3,79.9C-19.8,77.2,-35.1,69.8,-48.3,60.1C-61.5,50.4,-72.6,38.4,-78.9,24.1C-85.2,9.8,-86.7,-6.8,-82.4,-21.6C-78.1,-36.4,-68,-49.4,-55.4,-57.2C-42.8,-65,-27.7,-67.6,-13.1,-69.8C1.5,-72,30.6,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
+            </svg>
+          </div>
+          
+          <div class="card-number">02</div>
+          
+          <div class="service-icon-wrapper">
+            <img src="../Assets/icons/app.png" alt="Mobile App Development">
+          </div>
+
+          <h3 class="service-card-title">Mobile App Development</h3>
+          
+          <p class="service-card-description">
+            Native & cross-platform mobile apps with seamless performance
+            and exceptional user experience on all devices.
+          </p>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="modern-service-card card-3">
+          <div class="card-pattern">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,88.5,-0.9C87,14.6,81.4,29.2,73.1,42.3C64.8,55.4,53.8,67,40.4,73.8C27,80.6,11.2,82.6,-4.3,79.9C-19.8,77.2,-35.1,69.8,-48.3,60.1C-61.5,50.4,-72.6,38.4,-78.9,24.1C-85.2,9.8,-86.7,-6.8,-82.4,-21.6C-78.1,-36.4,-68,-49.4,-55.4,-57.2C-42.8,-65,-27.7,-67.6,-13.1,-69.8C1.5,-72,30.6,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
+            </svg>
+          </div>
+          
+          <div class="card-number">03</div>
+          
+          <div class="service-icon-wrapper">
+            <img src="https://cdn-icons-png.flaticon.com/512/2010/2010990.png" alt="UI/UX Design">
+          </div>
+
+          <h3 class="service-card-title">UI / UX Design</h3>
+          
+          <p class="service-card-description">
+            Modern, user-friendly interface designs that deliver smooth
+            digital experiences and drive engagement.
+          </p>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="modern-service-card card-4">
+          <div class="card-pattern">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,88.5,-0.9C87,14.6,81.4,29.2,73.1,42.3C64.8,55.4,53.8,67,40.4,73.8C27,80.6,11.2,82.6,-4.3,79.9C-19.8,77.2,-35.1,69.8,-48.3,60.1C-61.5,50.4,-72.6,38.4,-78.9,24.1C-85.2,9.8,-86.7,-6.8,-82.4,-21.6C-78.1,-36.4,-68,-49.4,-55.4,-57.2C-42.8,-65,-27.7,-67.6,-13.1,-69.8C1.5,-72,30.6,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
+            </svg>
+          </div>
+          
+          <div class="card-number">04</div>
+          
+          <div class="service-icon-wrapper">
+            <img src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png" alt="E-Commerce Solutions">
+          </div>
+
+          <h3 class="service-card-title">E-Commerce Solutions</h3>
+          
+          <p class="service-card-description">
+            Scalable online stores with secure payment integration and
+            custom features to boost your sales.
+          </p>
+        </div>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="modern-service-card card-5">
+          <div class="card-pattern">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,88.5,-0.9C87,14.6,81.4,29.2,73.1,42.3C64.8,55.4,53.8,67,40.4,73.8C27,80.6,11.2,82.6,-4.3,79.9C-19.8,77.2,-35.1,69.8,-48.3,60.1C-61.5,50.4,-72.6,38.4,-78.9,24.1C-85.2,9.8,-86.7,-6.8,-82.4,-21.6C-78.1,-36.4,-68,-49.4,-55.4,-57.2C-42.8,-65,-27.7,-67.6,-13.1,-69.8C1.5,-72,30.6,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
+            </svg>
+          </div>
+          
+          <div class="card-number">05</div>
+          
+          <div class="service-icon-wrapper">
+            <img src="https://cdn-icons-png.flaticon.com/512/2906/2906206.png" alt="Custom Software">
+          </div>
+
+          <h3 class="service-card-title">Custom Software</h3>
+          
+          <p class="service-card-description">
+            Tailored software solutions built to streamline operations and
+            enhance productivity for your business.
+          </p>
+        </div>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="modern-service-card card-6">
+          <div class="card-pattern">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,88.5,-0.9C87,14.6,81.4,29.2,73.1,42.3C64.8,55.4,53.8,67,40.4,73.8C27,80.6,11.2,82.6,-4.3,79.9C-19.8,77.2,-35.1,69.8,-48.3,60.1C-61.5,50.4,-72.6,38.4,-78.9,24.1C-85.2,9.8,-86.7,-6.8,-82.4,-21.6C-78.1,-36.4,-68,-49.4,-55.4,-57.2C-42.8,-65,-27.7,-67.6,-13.1,-69.8C1.5,-72,30.6,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
+            </svg>
+          </div>
+          
+          <div class="card-number">06</div>
+          
+          <div class="service-icon-wrapper">
+            <img src="https://cdn-icons-png.flaticon.com/512/3281/3281307.png" alt="Digital Marketing">
+          </div>
+
+          <h3 class="service-card-title">Digital Marketing</h3>
+          
+          <p class="service-card-description">
+            SEO, social media, and complete digital marketing strategies
+            to boost your brand visibility.
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <!-- Button for Explore More Services and add icon -->
+    <div class="text-center mt-4">
+      <a href="../services/Services.html" class="btn btn-outline-primary btn-lg"
+        >Explore More Services <i class="fas fa-arrow-right ms-2"></i></a
       >
-        <!-- Indicators -->
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#portfolioCarousel"
-            data-bs-slide-to="0"
-            class="active"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#portfolioCarousel"
-            data-bs-slide-to="1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#portfolioCarousel"
-            data-bs-slide-to="2"
-          ></button>
+      
+      
+    </div>
+  </div>
+</section>
+    <!-- ================= TECHNOLOGIES WE USE ================= -->
+    <section class="technologies-section py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold" style="color: #0d3b66">Technologies We Master</h2>
+          <p class="text-muted">
+            We work with cutting-edge technologies to build modern solutions
+          </p>
         </div>
+        <div class="row g-4 text-center">
+          <div class="col-4 col-md-3">
+  <div class="tech-icon p-3 rounded-3 bg-light text-center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" 
+         alt="C#" 
+         width="50" 
+         class="mb-2" />
 
-        <div class="carousel-inner pb-4">
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-            <div class="row g-4 justify-content-center">
-              <div class="col-md-4">
-                <div class="card portfolio-card">
-                  <img src="../Assets/banner_image.avif" class="card-img-top" />
-                  <div class="card-body">
-                    <p class="card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Corrupti perferendis repellat facilis ullam aperiam,
-                      voluptates nobis? Unde vitae voluptatum quibusdam?Lorem
-                      ipsum dolor sit amet consectetur adipisicing elit. Illo
-                      aliquam at non quam voluptates, ipsa nostrum ipsum minima
-                      fugiat dignissimos?
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card portfolio-card">
-                  <img src="../Assets/banner_image.avif" class="card-img-top" />
-                  <div class="card-body">
-                    <p class="card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Corrupti perferendis repellat facilis ullam aperiam,
-                      voluptates nobis? Unde vitae voluptatum quibusdam?Lorem
-                      ipsum dolor sit amet consectetur adipisicing elit. Illo
-                      aliquam at non quam voluptates, ipsa nostrum ipsum minima
-                      fugiat dignissimos?
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card portfolio-card">
-                  <img src="../Assets/banner_image.avif" class="card-img-top" />
-                  <div class="card-body">
-                    <p class="card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Corrupti perferendis repellat facilis ullam aperiam,
-                      voluptates nobis? Unde vitae voluptatum quibusdam?Lorem
-                      ipsum dolor sit amet consectetur adipisicing elit. Illo
-                      aliquam at non quam voluptates, ipsa nostrum ipsum minima
-                      fugiat dignissimos?
-                    </p>
-                  </div>
-                </div>
-              </div>
+    <span class="d-block fw-medium">C# / .NET</span>
+  </div>
+</div>
+<div class="col-4 col-md-3">
+            <div class="tech-icon p-3 rounded-3 bg-light">
+              <i class="fab fa-angular fa-3x text-danger mb-2"></i>
+              <span class="d-block fw-medium">Angular</span>
             </div>
           </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <div class="row g-4 justify-content-center">
-              <div class="col-md-4">
-                <div class="card portfolio-card">
-                  <img src="../Assets/banner_image.avif" class="card-img-top" />
-                  <div class="card-body">
-                    <p class="card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Corrupti perferendis repellat facilis ullam aperiam,
-                      voluptates nobis? Unde vitae voluptatum quibusdam?Lorem
-                      ipsum dolor sit amet consectetur adipisicing elit. Illo
-                      aliquam at non quam voluptates, ipsa nostrum ipsum minima
-                      fugiat dignissimos?
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card portfolio-card">
-                  <img src="../Assets/banner_image.avif" class="card-img-top" />
-                  <div class="card-body">
-                    <p class="card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Corrupti perferendis repellat facilis ullam aperiam,
-                      voluptates nobis? Unde vitae voluptatum quibusdam?Lorem
-                      ipsum dolor sit amet consectetur adipisicing elit. Illo
-                      aliquam at non quam voluptates, ipsa nostrum ipsum minima
-                      fugiat dignissimos?
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card portfolio-card">
-                  <img src="../Assets/banner_image.avif" class="card-img-top" />
-                  <div class="card-body">
-                    <p class="card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Corrupti perferendis repellat facilis ullam aperiam,
-                      voluptates nobis? Unde vitae voluptatum quibusdam?Lorem
-                      ipsum dolor sit amet consectetur adipisicing elit. Illo
-                      aliquam at non quam voluptates, ipsa nostrum ipsum minima
-                      fugiat dignissimos?
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <div class="col-4 col-md-3">
+            <div class="tech-icon p-3 rounded-3 bg-light">
+              <i class="fab fa-react fa-3x text-primary mb-2"></i>
+              <span class="d-block fw-medium">React</span>
+            </div>
+          </div>
+          <div class="col-4 col-md-3">
+            <div class="tech-icon p-3 rounded-3 bg-light">
+              <i class="fab fa-node-js fa-3x text-success mb-2"></i>
+              <span class="d-block fw-medium">Node.js</span>
+            </div>
+          </div>
+          <div class="col-4 col-md-3">
+            <div class="tech-icon p-3 rounded-3 bg-light">
+              <i class="fab fa-vuejs fa-3x text-info mb-2"></i>
+              <span class="d-block fw-medium">Vue.js</span>
+            </div>
+          </div>
+          <div class="col-4 col-md-3">
+            <div class="tech-icon p-3 rounded-3 bg-light">
+              <i class="fab fa-python fa-3x text-warning mb-2"></i>
+              <span class="d-block fw-medium">Python</span>
+            </div>
+          </div>
+          <div class="col-4 col-md-3">
+            <div class="tech-icon p-3 rounded-3 bg-light">
+              <i class="fab fa-android fa-3x text-success mb-2"></i>
+              <span class="d-block fw-medium">Android</span>
+            </div>
+          </div>
+          <div class="col-4 col-md-3">
+            <div class="tech-icon p-3 rounded-3 bg-light">
+              <i class="fab fa-apple fa-3x text-dark mb-2"></i>
+              <span class="d-block fw-medium">iOS</span>
             </div>
           </div>
         </div>
-
-        <!-- Controls -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#portfolioCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#portfolioCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon"></span>
-        </button>
       </div>
+    </section>
+<!-- ================= PORTFOLIO SECTION ================= -->
+<section class="portfolio-section py-5 bg-light">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Our Projects</h2>
+      <p class="text-muted">
+        We craft digital solutions that drive business growth, innovation, and seamless user experiences.
+      </p>
+    </div>
+
+    <!-- Portfolio Carousel -->
+    <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+      
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- Carousel Inner -->
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row g-4 justify-content-center">
+            <!-- Project 1 -->
+            <div class="col-md-4">
+              <div class="card portfolio-card">
+                <img src="../Assets/project3.jpg" class="card-img-top p-2" alt="Future Event 2027 Project" />
+                <div class="card-body">
+                  <h5 class="fw-bold">Future Event</h5>
+                  <p class="card-text">
+Developed a modern, responsive web platform for Future Event 2027 using .NET and Angular. Built dynamic pages for sponsors, exhibitors, event details, and registration. Created reusable UI components, integrated APIs, and implemented secure form handling with validation and captcha. Delivered a fast, user-friendly experience aligned with the client’s branding.                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-4">
+              <div class="card portfolio-card">
+                <img src="../Assets/project5.jpg" class="card-img-top p-2" alt="Dubai Sports Event Portal" />
+                <div class="card-body">
+                  <h5 class="fw-bold">Tetco – Dubai Client
+</h5>
+                  <p class="card-text">
+Developed a complete Sports Event Registration Portal for a Dubai-based client, built with Angular, .NET Core, and SQL Server.<br>
+The platform includes dynamic registration forms for Teams, Delegates, and Sponsors, each with its own custom workflow and approval process. I also integrated Stripe for online ticket purchasing and added automated email notifications for registrations and updates.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-md-4">
+              <div class="card portfolio-card">
+                <img src="../Assets/mosadaqa.jpg" class="card-img-top p-2" alt="Admission Management Portal" />
+                <div class="card-body">
+                  <h5 class="fw-bold">Saudi Arabia University Admission Portal
+</h5>
+                  <p class="card-text">
+                    Delivered a high-performance portal using React, .NET Core, and Microsoft CRM. Key features:
+                    <ul>
+                      <li>Secure login using Microsoft Intra ID
+</li>
+                      <li>Applicants can apply to multiple Saudi universities under TETCO
+</li>
+<li>Support for multiple degree programs (B.A, MS, etc.) with document uploads ....
+</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 (Example Content) -->
+        <div class="carousel-item">
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+              <div class="card portfolio-card">
+                <img src="../Assets/project2.png" class="card-img-top p-2" alt="Project 4" />
+                <div class="card-body">
+                  <h5 class="fw-bold">Event Registration Platform
+</h5>
+                  <p class="card-text">Developed a scalable event management platform featuring a dynamic drag-and-drop Form Builder for creating custom registration forms with multiple field types. Built a full Ticketing System supporting ticket categories, pricing, discount codes, and complete checkout flows. Integrated secure end-to-end payments with real-time confirmations and email alerts. Added an admin panel for category-wise registration management and detailed attendee profiles with documents and history.
+</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card portfolio-card">
+                <img src="../Assets/project4.png" class="card-img-top p-2" alt="Project 5" />
+                <div class="card-body">
+                  <h5 class="fw-bold">Employee Management System
+</h5>
+                  <p class="card-text">Developed a comprehensive Employee Management System for a Germany-based company using Angular 19, PrimeNG, Bootstrap, and .NET Core Web APIs. Delivered end-to-end modules: dynamic multi-step onboarding forms with validations, a full leave management workflow with approvals and notifications, flexible roles and permissions, responsive dashboards and complex UI, and automated background services for notifications, backups, and scheduled tasks. Boosted performance, reliability, and maintainability. Dev.
+</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card portfolio-card">
+                <img src="../Assets/project7.png" class="card-img-top p-2" alt="Project 6" />
+                <div class="card-body">
+                  <h5 class="fw-bold">Future Event</h5>
+                  <p class="card-text">Developed a modern, responsive web platform for Future Event 2027 using .NET and Angular. Built dynamic pages for sponsors, exhibitors, event details, and registration. Created reusable UI components, integrated APIs, and implemented secure form handling with validation and captcha. Delivered a fast, user-friendly experience aligned with the client’s branding.
+</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
       <!-- ================= CONTACT SECTION ================= -->
       <section class="contact-cta py-5 text-center bg-light">
         <div class="container">
@@ -454,7 +506,7 @@
           <p class="mt-2">
             Let’s build something amazing together. Contact our team today!
           </p>
-          <a href="#contact" class="btn btn-primary btn-lg mt-3">Contact Us</a>
+          <a href="../Contact/contact.html" class="btn btn-primary btn-lg mt-3">Contact Us</a>
         </div>
       </section>
       <!-- ================= Footer SECTION ================= -->
@@ -474,7 +526,7 @@
                 <a href="#" class="text-white me-3 fs-5"
                   ><i class="fab fa-instagram"></i
                 ></a>
-                <a href="#" class="text-white me-3 fs-5"
+                <a href="https://www.linkedin.com/company/encodal/" class="text-white me-3 fs-5"
                   ><i class="fab fa-linkedin"></i
                 ></a>
                 <a href="#" class="text-white fs-5"
@@ -487,23 +539,23 @@
               <h6 class="fw-bold mb-3">Quick Links</h6>
               <ul class="list-unstyled footer-links">
                 <li>
-                  <a href="#" class="text-white text-decoration-none">Home</a>
+                  <a href="./Home.html" class="text-white text-decoration-none">Home</a>
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none">About</a>
+                  <a href="../about/About.html" class="text-white text-decoration-none">About</a>
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none"
+                  <a href="../services/Services.html" class="text-white text-decoration-none"
                     >Services</a
                   >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none"
+                  <a href="../portfolio/portfolio.html" class="text-white text-decoration-none"
                     >Portfolio</a
                   >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none"
+                  <a href="../Contact/contact.html" class="text-white text-decoration-none"
                     >Contact</a
                   >
                 </li>
@@ -514,28 +566,43 @@
               <h6 class="fw-bold mb-3">Our Services</h6>
               <ul class="list-unstyled footer-links">
                 <li>
-                  <a href="#" class="text-white text-decoration-none"
+                  <a href="../services/Services.html" class="text-white text-decoration-none"
                     >Web Development</a
                   >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none"
+                  <a href="../services/Services.html" class="text-white text-decoration-none"
                     >App Development</a
                   >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none"
+                  <a href="../services/Services.html" class="text-white text-decoration-none"
                     >UI/UX Design</a
                   >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none"
+                  <a href="../services/Services.html" class="text-white text-decoration-none"
                     >E-Commerce Solutions</a
                   >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none"
+                  <a href="../services/Services.html" class="text-white text-decoration-none"
                     >Digital Marketing</a
+                  >
+                </li>
+                <li>
+                  <a href="../services/Services.html" class="text-white text-decoration-none"
+                    >ERP Solutions</a
+                  >
+                </li>
+                <li>
+                  <a href="../services/Services.html" class="text-white text-decoration-none"
+                    >AI Agents & Chatbots</a
+                  >
+                </li>
+                <li>
+                  <a href="../services/Services.html" class="text-white text-decoration-none"
+                    >Microsoft Dynamics 365</a
                   >
                 </li>
               </ul>
@@ -544,13 +611,13 @@
             <div class="col-md-3 mb-4">
               <h6 class="fw-bold mb-3">Contact Us</h6>
               <p class="mb-2">
-                <i class="fas fa-map-marker-alt me-2"></i> Lahore, Pakistan
+                <i class="fas fa-map-marker-alt me-2"></i> Faisalabad, Pakistan
               </p>
               <p class="mb-2">
-                <i class="fas fa-envelope me-2"></i> info@encodal.com
+                <i class="fas fa-envelope me-2"></i> hr@encodal.com
               </p>
               <p class="mb-2">
-                <i class="fas fa-phone me-2"></i> +92 300 1234567
+                <i class="fas fa-phone me-2"></i> +92 308 7001937
               </p>
             </div>
           </div>
@@ -564,6 +631,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    
     <script src="./Home.js"></script>
   </body>
 </html>

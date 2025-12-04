@@ -1,6 +1,6 @@
 particlesJS("particles-js", {
     particles: {
-      number: { value: 80 },
+      number: { value: 70 },
       size: { value: 3 },
       color: { value: "#0d6efd" },
       line_linked: {
